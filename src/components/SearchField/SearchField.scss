@@ -1,0 +1,34 @@
+@import '../../styleguide/font';
+@import '../../styleguide/colors';
+@import '../../styleguide/spacing';
+@import '../../styleguide/breakpoints';
+
+.search-field-container {
+  background: white;
+  width: 100%;
+  grid-column: 10 span;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media screen and (min-width: $screen-md) {
+    grid-column: 9 span;
+  }
+
+  .search-field-input {
+    width: 100%;
+    padding-left: $spacing-sm;
+    font-size: $font-size-md;
+    border: none;
+    outline: none;
+  }
+
+  .search-field-button {
+    float: right;
+    padding: $spacing-xs;
+    border: none;
+    cursor: pointer;
+    background: $light-gray;
+    height: 100%;
+  }
+}

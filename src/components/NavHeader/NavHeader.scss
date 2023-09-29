@@ -1,0 +1,23 @@
+@import '../../styleguide/font';
+@import '../../styleguide/colors';
+@import '../../styleguide/spacing';
+@import '../../styleguide/breakpoints';
+
+.nav-header {
+  width: 100%;
+  overflow: hidden;
+  background-color: $yellow;
+  padding: $spacing-sm;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $spacing-xs;
+
+  @media screen and (min-width: $screen-md) {
+    grid-gap: $spacing-md;
+  }
+
+  .company-logo {
+    margin-left: auto;
+    height: 100%;
+  }
+}
