@@ -1,12 +1,12 @@
-import { useSearchParams } from 'react-router-dom';
+import { useSearchResults } from '../../hooks/useSearchResults';
 
 function SearchResults() {
-  const [searchParams] = useSearchParams();
+  const searchResults = useSearchResults();
 
   return (
     <div>
       <h1>SearchResults</h1>
-      <p>{searchParams.get('search')}</p>
+      {/* <p>{searchParams.get('search')}</p> */}
     </div>
   );
 }

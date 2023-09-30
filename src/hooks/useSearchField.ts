@@ -10,7 +10,9 @@ export function useSearchField(initialValue: string) {
   }
 
   function handleSearch() {
-    navigate(`/items?search=${value}`);
+    if (value) {
+      navigate(`/items?search=${value}`);
+    }
   }
 
   function onKeyDown(event: React.KeyboardEvent) {
