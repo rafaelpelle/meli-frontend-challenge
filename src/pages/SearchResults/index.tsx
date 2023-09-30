@@ -1,5 +1,10 @@
 import { Fragment } from 'react';
-import { Breadcrumbs, Loader, ProductListItem } from '../../components';
+import {
+  Breadcrumbs,
+  ErrorBanner,
+  Loader,
+  ProductListItem,
+} from '../../components';
 import { useSearchResults } from '../../hooks/useSearchResults';
 import './SearchResults.scss';
 
@@ -9,12 +14,7 @@ function SearchResults() {
   return (
     <main className="search-results-container">
       {isLoading && <Loader />}
-      {errorMsg && (
-        <section className="error-container">
-          <h1>Atención</h1>
-          <p>{errorMsg}</p>
-        </section>
-      )}
+      {errorMsg && <ErrorBanner errorMsg={errorMsg} />}
 
       {!isLoading && !errorMsg && results?.items.length && (
         <Fragment>

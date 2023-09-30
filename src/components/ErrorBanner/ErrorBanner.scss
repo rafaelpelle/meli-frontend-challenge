@@ -1,0 +1,26 @@
+@import '../../styleguide/colors';
+@import '../../styleguide/spacing';
+@import '../../styleguide/border';
+@import '../../styleguide/breakpoints';
+
+.error-container {
+  margin: $spacing-xxl auto 0 auto;
+  text-align: center;
+
+  img {
+    width: 90vw;
+    height: auto;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    img {
+      width: 70vw;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    img {
+      width: 40vw;
+    }
+  }
+}
