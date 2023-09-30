@@ -5,7 +5,7 @@ export const getSearchResultsMock: SearchResultsDTO = {
     name: 'Rafael',
     lastname: 'Pelle',
   },
-  categories: ['category1', 'category2', 'category3', 'category4'],
+  categories: ['Computación', 'Laptops y Accesorios', 'Notebooks'],
   items: [
     {
       id: 'MLA1486407330',

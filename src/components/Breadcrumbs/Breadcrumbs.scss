@@ -1,0 +1,24 @@
+@import '../../styleguide/colors';
+@import '../../styleguide/spacing';
+@import '../../styleguide/font';
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: $spacing-sm 0;
+  color: $dark-gray;
+  font-size: $font-size-xs;
+
+  li {
+    display: inline;
+
+    &:last-child {
+      font-weight: bold;
+    }
+
+    &:not(:last-child):after {
+      padding: $spacing-xs;
+      content: '>';
+    }
+  }
+}

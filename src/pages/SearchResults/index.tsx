@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Loader, ProductListItem } from '../../components';
+import { Breadcrumbs, Loader, ProductListItem } from '../../components';
 import { useSearchResults } from '../../hooks/useSearchResults';
 import './SearchResults.scss';
 
@@ -18,10 +18,7 @@ function SearchResults() {
 
       {!isLoading && !errorMsg && results?.items.length && (
         <Fragment>
-          <div className="results-breadcrumbs">
-            Electrónica, Audio y Video / iPod / Reproductores / iPod touch / 32
-            GB
-          </div>
+          <Breadcrumbs categories={results.categories} />
 
           <section className="results-container">
             {results.items.map((item, index) => (
