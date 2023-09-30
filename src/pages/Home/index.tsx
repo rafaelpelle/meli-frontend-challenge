@@ -1,7 +1,10 @@
+import findSrc from '../../assets/find.svg';
+import './Home.scss';
+
 function HomePage() {
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="home-container">
+      <img src={findSrc} alt="Find" />
     </div>
   );
 }
