@@ -5,3 +5,9 @@ export interface SearchResultsDTO {
   categories: string[];
   items: ProductItem[];
 }
+
+export interface ProductDetailsDTO {
+  author: Author;
+  categories: string[];
+  item: ProductItem;
+}

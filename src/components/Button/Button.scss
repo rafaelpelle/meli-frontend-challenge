@@ -1,0 +1,26 @@
+@import '../../styleguide/spacing';
+@import '../../styleguide/colors';
+@import '../../styleguide/border';
+@import '../../styleguide/font';
+
+.btn {
+  font-weight: 600;
+  padding: 0 $spacing-md;
+  border: none;
+  border-radius: $radius-sm;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  height: $spacing-xxl;
+  font-size: $font-size-sm;
+}
+
+.primary-btn {
+  background-color: $blue;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: rgba($blue, 0.15);
+  color: $blue;
+}

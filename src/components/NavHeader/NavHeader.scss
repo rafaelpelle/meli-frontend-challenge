@@ -12,7 +12,6 @@
   padding: $spacing-sm;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: $spacing-xs;
 
   .company-logo-container {
     display: flex;
@@ -30,6 +29,7 @@
   }
 
   @media screen and (min-width: $screen-md) {
+    padding: $spacing-sm 0;
     grid-gap: $spacing-md;
 
     .search-field-container {
