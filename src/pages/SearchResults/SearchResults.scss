@@ -1,6 +1,44 @@
 @import '../../styleguide/spacing';
+@import '../../styleguide/colors';
+@import '../../styleguide/breakpoints';
+@import '../../styleguide/border';
 
-.error-container {
-  text-align: center;
-  padding: $spacing-lg;
+.search-results-container {
+  display: grid;
+  grid-template-columns: repeat(12, 10fr);
+  padding: 0 $spacing-sm $spacing-xxl $spacing-sm;
+
+  @media screen and (min-width: $screen-md) {
+    padding: 0 0 $spacing-xxl 0;
+  }
+
+  .error-container {
+    text-align: center;
+    padding: $spacing-lg;
+  }
+
+  .results-breadcrumbs {
+    margin: $spacing-sm 0;
+    color: $dark-gray;
+  }
+
+  .results-container {
+    background-color: white;
+    border-radius: $radius-sm;
+
+    hr {
+      margin: 0 $spacing-sm;
+      border: 1px solid $light-gray;
+    }
+  }
+
+  * {
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    @media screen and (min-width: $screen-md) {
+      grid-column-start: 2;
+      grid-column-end: 12;
+    }
+  }
 }

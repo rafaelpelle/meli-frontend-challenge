@@ -20,6 +20,7 @@ export function useSearchResults() {
       setIsLoading(true);
       const data = await getSearchResults(search);
       setResults(data);
+      setErrorMsg('');
     } catch (error: unknown) {
       setErrorMsg(getErrorMessage(error));
     } finally {

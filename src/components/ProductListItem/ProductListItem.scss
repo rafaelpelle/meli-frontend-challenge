@@ -1,0 +1,53 @@
+@import '../../styleguide/colors';
+@import '../../styleguide/spacing';
+@import '../../styleguide/border';
+@import '../../styleguide/font';
+@import '../../styleguide/breakpoints';
+
+.product-list-item {
+  width: 100%;
+  padding: $spacing-sm;
+  display: flex;
+  cursor: pointer;
+
+  .product-picture {
+    width: 90px;
+    height: 90px;
+    border-radius: $radius-sm;
+    margin-right: $spacing-sm;
+  }
+
+  .product-price-container {
+    display: flex;
+    align-items: center;
+
+    .product-price {
+      font-size: $font-size-lg;
+      margin: 0 0 $spacing-md 0;
+    }
+
+    .product-shipping-icon {
+      margin-left: $spacing-sm;
+      width: $spacing-md;
+      height: auto;
+    }
+  }
+
+  .product-title {
+    font-size: $font-size-md;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    .product-picture {
+      width: 180px;
+      height: 180px;
+    }
+
+    .product-price-container {
+      .product-price {
+        margin: $spacing-md 0;
+      }
+    }
+  }
+}

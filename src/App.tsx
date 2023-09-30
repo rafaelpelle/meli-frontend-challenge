@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import './App.scss';
 import { NavHeader } from './components';
 import { HomePage, ProductDetails, SearchResults } from './pages';
 
