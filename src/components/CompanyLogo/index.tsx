@@ -1,5 +1,4 @@
 import companyLogoSrc from '../../assets/Logo_ML.png';
-import './CompanyLogo.scss';
 
 function CompanyLogo() {
   return (

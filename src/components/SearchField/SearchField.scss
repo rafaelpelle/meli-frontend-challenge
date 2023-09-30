@@ -2,18 +2,15 @@
 @import '../../styleguide/colors';
 @import '../../styleguide/spacing';
 @import '../../styleguide/breakpoints';
+@import '../../styleguide/border';
 
 .search-field-container {
   background: white;
   width: 100%;
-  grid-column: 10 span;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-
-  @media screen and (min-width: $screen-md) {
-    grid-column: 9 span;
-  }
+  border-radius: $radius-sm;
 
   .search-field-input {
     width: 100%;
@@ -24,11 +21,13 @@
   }
 
   .search-field-button {
-    float: right;
-    padding: $spacing-xs;
-    border: none;
-    cursor: pointer;
     background: $light-gray;
-    height: 100%;
+    padding: $spacing-xs;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-top-right-radius: $radius-sm;
+    border-bottom-right-radius: $radius-sm;
+    cursor: pointer;
   }
 }

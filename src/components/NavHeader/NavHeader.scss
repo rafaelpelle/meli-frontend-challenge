@@ -16,8 +16,25 @@
     grid-gap: $spacing-md;
   }
 
-  .company-logo {
-    margin-left: auto;
-    height: 100%;
+  .company-logo-container {
+    display: flex;
+    justify-content: flex-end;
+
+    grid-column: 2 span;
+
+    .company-logo-img {
+      @media screen and (min-width: $screen-md) {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .search-field-container {
+    grid-column: 10 span;
+
+    @media screen and (min-width: $screen-md) {
+      grid-column: 9 span;
+    }
   }
 }
