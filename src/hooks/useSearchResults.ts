@@ -36,6 +36,5 @@ export function useSearchResults() {
     isLoading,
     errorMsg,
     results,
-    search: searchParams.get('search'),
   };
 }

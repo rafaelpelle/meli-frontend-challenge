@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import freeShippingIcon from '../../assets/ic_shipping.png';
 import freeShipping2xIcon from '../../assets/ic_shipping@2x.png';
 import { ProductItem } from '../../types/Model';
@@ -11,9 +12,15 @@ export interface ProductListItemProps {
 
 function ProductListItem({ item }: ProductListItemProps) {
   const [shippingIconSrc, setShippingIconSrc] = useState(freeShippingIcon);
+  const navigate = useNavigate();
 
   return (
-    <div className="product-list-item">
+    <div
+      className="product-list-item"
+      onClick={() => {
+        navigate(`/items/${item.id}`);
+      }}
+    >
       <img className="product-picture" src={item.picture} alt={item.title} />
       <div>
         <div className="product-price-container">
