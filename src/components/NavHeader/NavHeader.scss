@@ -14,28 +14,25 @@
   grid-template-columns: repeat(12, 1fr);
   grid-gap: $spacing-xs;
 
-  @media screen and (min-width: $screen-md) {
-    grid-gap: $spacing-md;
-  }
-
   .company-logo-container {
     display: flex;
     justify-content: flex-end;
-
     grid-column: 2 span;
 
     .company-logo-img {
-      @media screen and (min-width: $screen-md) {
-        height: 100%;
-        width: auto;
-      }
+      height: 40px;
+      width: auto;
     }
   }
 
   .search-field-container {
     grid-column: 10 span;
+  }
 
-    @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: $screen-md) {
+    grid-gap: $spacing-md;
+
+    .search-field-container {
       grid-column: 9 span;
     }
   }
