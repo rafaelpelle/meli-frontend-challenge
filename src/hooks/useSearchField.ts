@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function useSearch(initialValue: string) {
+export function useSearchField(initialValue: string) {
   const navigate = useNavigate();
   const [value, setValue] = useState<string>(initialValue);
 

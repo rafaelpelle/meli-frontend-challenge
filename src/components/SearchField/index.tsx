@@ -1,9 +1,9 @@
 import searchIconSrc from '../../assets/ic_Search.png';
-import { useSearch } from '../../hooks/useSearch';
+import { useSearchField } from '../../hooks/useSearchField';
 import './SearchField.scss';
 
 function SearchField() {
-  const { handleSearch, ...searchInputProps } = useSearch('');
+  const { handleSearch, ...searchInputProps } = useSearchField('');
 
   return (
     <div className="search-field-container">
