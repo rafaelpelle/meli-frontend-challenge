@@ -1,9 +1,11 @@
-@import '../../styleguide/font';
 @import '../../styleguide/colors';
 @import '../../styleguide/spacing';
 @import '../../styleguide/breakpoints';
 
 .nav-header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
   width: 100%;
   overflow: hidden;
   background-color: $yellow;
