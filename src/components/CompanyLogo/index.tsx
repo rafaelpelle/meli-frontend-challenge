@@ -7,16 +7,18 @@ function CompanyLogo() {
 
   return (
     <div className="company-logo-container">
-      <img
-        src={src}
-        className="company-logo-img"
-        alt="Mercado Libre"
-        onLoad={() => {
-          if (companyLogo2xSrc.length > src.length) {
-            setSrc(companyLogo2xSrc);
-          }
-        }}
-      />
+      <a href="/">
+        <img
+          src={src}
+          className="company-logo-img"
+          alt="Mercado Libre"
+          onLoad={() => {
+            if (companyLogo2xSrc.length > src.length) {
+              setSrc(companyLogo2xSrc);
+            }
+          }}
+        />
+      </a>
     </div>
   );
 }
