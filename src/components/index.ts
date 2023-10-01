@@ -4,6 +4,7 @@ import CompanyLogo from './CompanyLogo';
 import ErrorBanner from './ErrorBanner';
 import Loader from './Loader';
 import NavHeader from './NavHeader';
+import ProductBanner from './ProductBanner';
 import ProductListItem from './ProductListItem';
 import SearchField from './SearchField';
 
@@ -14,6 +15,7 @@ export {
   ErrorBanner,
   Loader,
   NavHeader,
+  ProductBanner,
   ProductListItem,
   SearchField,
 };

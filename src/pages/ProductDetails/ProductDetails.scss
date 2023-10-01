@@ -14,105 +14,12 @@
     grid-column-end: 13;
   }
 
-  .data-container {
-    background-color: white;
-    padding: $spacing-xl;
-    border-radius: $radius-sm;
-
-    .img-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-
-      img {
-        grid-column-start: 1;
-        grid-column-end: 13;
-        width: 100%;
-        height: auto;
-        max-width: 680px;
-      }
-
-      .title-container {
-        grid-column-start: 1;
-        grid-column-end: 13;
-
-        .product-sold {
-          font-size: $font-size-xs;
-          margin-top: 0;
-          margin-bottom: $spacing-sm;
-        }
-
-        .product-title {
-          font-size: $font-size-lg;
-          margin: 0;
-        }
-
-        .product-price {
-          font-size: $font-size-xxl;
-          margin: $spacing-lg 0;
-          font-weight: normal;
-        }
-      }
-
-      .cta-button {
-        margin-right: $spacing-lg;
-      }
-    }
-
-    .description-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      margin-top: $spacing-xxl;
-
-      .description-title {
-        font-size: $font-size-xl;
-        font-weight: normal;
-        margin-bottom: $spacing-md;
-        grid-column-start: 1;
-        grid-column-end: 13;
-      }
-
-      .description-content {
-        font-size: $font-size-sm;
-        color: $gray;
-        margin: 0;
-        grid-column-start: 1;
-        grid-column-end: 13;
-      }
-    }
-  }
-
   @media screen and (min-width: $screen-md) {
     padding: 0 0 $spacing-xxl 0;
 
     * {
       grid-column-start: 2;
       grid-column-end: 12;
-    }
-
-    .data-container {
-      .img-container {
-        img {
-          grid-column-start: 1;
-          grid-column-end: 8;
-          width: 100%;
-          height: auto;
-        }
-
-        .title-container {
-          grid-column-start: 9;
-          grid-column-end: 13;
-        }
-      }
-
-      .description-container {
-        .description-title {
-          grid-column-end: 9;
-        }
-
-        .description-content {
-          grid-column-end: 9;
-        }
-      }
     }
   }
 }
