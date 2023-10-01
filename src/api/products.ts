@@ -1,12 +1,9 @@
-// import axiosClient from './axiosClient';
-import { getProductDetailsMock, getSearchResultsMock } from './mock';
+import axiosClient from './axiosClient';
 
 export function getSearchResults(search: string) {
-  // return axiosClient.get(`/api/items?q=${search}`);
-  return Promise.resolve(getSearchResultsMock);
+  return axiosClient.get(`/items?q=${search}`);
 }
 
 export function getProductDetails(id: string) {
-  // return axiosClient.get(`/api/items/${id}`);
-  return Promise.resolve(getProductDetailsMock);
+  return axiosClient.get(`/items/${id}`);
 }

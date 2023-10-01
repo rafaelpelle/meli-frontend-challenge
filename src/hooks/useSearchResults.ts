@@ -18,7 +18,7 @@ export function useSearchResults() {
       }
 
       setIsLoading(true);
-      const data = await getSearchResults(search);
+      const { data } = await getSearchResults(search);
       setResults(data);
       setErrorMsg('');
     } catch (error: unknown) {

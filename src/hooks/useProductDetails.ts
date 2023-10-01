@@ -17,7 +17,7 @@ export function useProductDetails() {
       }
 
       setIsLoading(true);
-      const data = await getProductDetails(id);
+      const { data } = await getProductDetails(id);
       setData(data);
       setErrorMsg('');
     } catch (error: unknown) {
