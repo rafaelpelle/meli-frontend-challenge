@@ -10,6 +10,13 @@ Click [here](challenge.pdf) to open.
 
 <br>
 
+## Getting Started
+
+Before running the project, you need to install all the dependencies and setup the environment variables:
+
+- Run `npm install`;
+- Create a `.env` file on the project root folder. The file only needs one env variable and you should name it `REACT_APP_API_URL`. Check the `.env-example` file for reference.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -33,4 +40,4 @@ Launches the unit test (Jest + RTL) runner in the interactive mode.
 
 ### `npm cypress`
 
-Launches the E2E test (Cypress) runner in the interactive mode.
+Launches the E2E test (Cypress) runner in the interactive mode. **Remember:** cypress is configured to access the [http://localhost:3000](http://localhost:3000) environment. You need to run the project with `npm start` before running `npm cypress`.
