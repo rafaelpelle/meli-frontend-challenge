@@ -1,4 +1,4 @@
-# routes-frontend-challenge
+# meli-frontend-challenge
 
 ## Challenge description and technical requirements
 
