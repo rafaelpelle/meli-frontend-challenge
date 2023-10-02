@@ -9,9 +9,17 @@ export function useSearchField(initialValue: string) {
     setValue(e.target.value);
   }
 
+  function isProductId(value: string): boolean {
+    return value?.length === 13 && value.startsWith('MLA');
+  }
+
   function handleSearch() {
     if (value) {
-      navigate(`/items?search=${value}`);
+      if (isProductId(value)) {
+        navigate(`/items/${value}`);
+      } else {
+        navigate(`/items?search=${value}`);
+      }
     }
   }
 
