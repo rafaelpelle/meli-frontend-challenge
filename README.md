@@ -21,7 +21,7 @@ Before running the project, you need to install all the dependencies and setup t
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -34,10 +34,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### `npm test`
+### `npm run test`
 
 Launches the unit test (Jest + RTL) runner in the interactive mode.
 
-### `npm cypress`
+### `npm run cypress`
 
 Launches the E2E test (Cypress) runner in the interactive mode. **Remember:** cypress is configured to access the [http://localhost:3000](http://localhost:3000) environment. You need to run the project with `npm start` before running `npm cypress`.
+
+<hr />
+
+![image](https://github.com/rafaelpelle/meli-frontend-challenge/assets/12041847/29c8c3a8-56ea-4c74-b284-dd9ad8fa68f1)
+
