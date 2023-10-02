@@ -1,5 +1,10 @@
 {
-  "extends": ["react-app", "prettier", "plugin:prettier/recommended"],
+  "extends": [
+    "react-app",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:cypress/recommended"
+  ],
   "rules": {
     "prettier/prettier": "warn"
   },
